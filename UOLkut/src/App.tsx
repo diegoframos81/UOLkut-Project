@@ -1,19 +1,18 @@
 
-
-
-import { FooterLogin } from './Components/Forms/footer'
-import { HeaderLogin } from './Components/Forms/header'
+import { FooterLogin } from './Components/Footer/footer'
+import { HeaderLogin } from './Components/Header/header'
+import Login from './Pages/Login'
 import { GlobalStyle } from './style/global'
-import { Login } from './Pages/Login'
-function App() {
 
 
+const App = () => {
   return (
     <>
-      <HeaderLogin/>
-      <FooterLogin/>
-      <Login/>
-      <GlobalStyle/>
+      <HeaderLogin />
+      
+      <Login />
+      <GlobalStyle />
+      <FooterLogin />
     </>
   )
 }

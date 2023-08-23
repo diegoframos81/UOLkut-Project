@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #D9E6F7;
+        --white: #FDFEFF;
 
         --text-title: #ED6D25
         --placeholder: #AACCEE;
@@ -10,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     *{
+
         margin: 0;
         padding: 0;
         box-sizing: border-box;
