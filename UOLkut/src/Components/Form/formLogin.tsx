@@ -1,5 +1,5 @@
 import orkutIcon from '../../assets/orkutIcon.svg';
-import { FormsLogin, CheckedButtom } from './style';
+import { FormsLogin } from './style';
 
 
 
@@ -19,10 +19,10 @@ const FormLogin = () => {
                 <label htmlFor="password"></label>
                 <input type="password" placeholder="Senha" id="password" />
 
-                <CheckedButtom>
-                    <input className={'passwordCheck'} type="checkbox" name="remember-password" />
+                
+                    <input className='passwordCheck' type="checkbox" name="remember-password" />
                     <label htmlFor="remember-password">Lembrar minha senha</label>
-                </CheckedButtom>
+                
 
                 <button>Entrar na conta</button>
                 <button>Criar uma conta</button>

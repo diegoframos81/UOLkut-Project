@@ -1,5 +1,5 @@
 
-import { MainForm } from "../Components/Forms/main"
+import { MainForm } from "../Components/MainForm/main"
 
 
 const Login = () => {

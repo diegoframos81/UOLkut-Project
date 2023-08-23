@@ -1,8 +1,8 @@
 
 import { FooterLogin } from './Components/Footer/footer'
 import { HeaderLogin } from './Components/Header/header'
-import Login from './Pages/Login'
 import { GlobalStyle } from './style/global'
+import   Login  from './Pages/Login'
 
 
 const App = () => {

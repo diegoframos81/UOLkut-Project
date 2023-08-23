@@ -48,12 +48,6 @@ export const FormsLogin = styled.form`
         line-height: normal;
         cursor: text;
     }
-`;
-
-export const CheckedButtom = styled.input`
-    width: 23em;
-    height: 2em;
-    margin-top: 1em;
-    display: inline-flex;
 
 `;
+
