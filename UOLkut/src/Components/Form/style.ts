@@ -7,13 +7,13 @@ export const FormsLogin = styled.form`
         flex-direction: column;
         align-items: center;
         width: 28em;
-        height: 41.2em;
+        height: 41.5em;
         flex-shrink: 0;
         border-radius: 16px;
         background: #FDFEFF;
         margin-left: 60rem;
-        margin-top: -41.8rem;
-        gap: 10px;
+        margin-top: -50rem;
+        gap: 20px;
     }
     form img {
         width: 60px;
@@ -29,25 +29,62 @@ export const FormsLogin = styled.form`
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        margin-top: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
 
     form input[type=email],[type=password] {
-        width: 19em;
-        height: 3em;
+        width: 21em;
+        height: 3.5em;
         flex-shrink: 0;
         border-radius: 8px;
         border: none;
         background: #EFF3F8;
         color: #868686;
+        margin-bottom: 21.5px;
+        padding: 1.25rem;
         
-        font-size: 20px;
+        font-size: 19px;
         font-style: normal;
-        font-weight: 400;
         line-height: normal;
         cursor: text;
+        
     }
     
+    label.id-email {
+        position: absolute;
+        top: 25.2rem;
+        left: 83.5rem;
+    }
+
+    label.id-password{
+        position: absolute;
+        top: 32rem;
+        left: 83.5rem;
+    }
+
+    input:focus + label.id-email {
+        
+
+        font-size: 18px;
+        top: 22.6rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+    input:focus + label.id-password {
+        font-size: 18px;
+        top: 29.3rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
 `;
 

@@ -17,11 +17,32 @@ export const ContainerMain = styled.main`
 export const ContentMain = styled.div`
     
     main img {
-        width: 50rem;
-        height: 40rem;
+        width: 55rem;
+        height: 58rem;
         flex-shrink: 0;
-        margin-top: 6%;
         
-        z-index: 1;
+        
+        
+        
+        
     }
+    .Bg {
+        position: absolute;
+        left: 21.3rem;
+        top: 6.2rem;
+    
+    }
+    
+    main p {
+        position: absolute;
+        top: 48.5rem;
+        left: 23.5rem;
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: var(--white);
+    }
+
+    
 `

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ContainerFooter = styled.footer`
-    bottom: 0;
-    margin-top: 57.4rem;
+    
+    margin-top: 5.9%;
     
     
     footer {
@@ -11,7 +11,7 @@ export const ContainerFooter = styled.footer`
         align-items: center;
         justify-content: center;
         max-width: 100%;
-        height: 3rem;
+        height: 3.3rem;
         flex-shrink: 0;
         background: #FDFEFF;
 
