@@ -1,7 +1,8 @@
 
 
+import Profile from './Pages/Profile'
 import { GlobalStyle } from './style/global'
-import   Login  from './Pages/Login'
+// import   Login  from './Pages/Login'
 
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
     <>
       
       
-      <Login />
+      {/* <Login /> */}
+      <Profile />
       <GlobalStyle />
       
     </>
