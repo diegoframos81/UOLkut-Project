@@ -1,6 +1,7 @@
 import orkutIcon from '../../assets/orkutIcon.svg';
+import { CheckPassword } from '../Inputs/sytleCheck';
 import { FormsLogin } from './style';
-
+import { Button } from '../Inputs/styleButtons';
 
 
 const FormLogin = () => {
@@ -11,22 +12,25 @@ const FormLogin = () => {
                         
                 <img src={orkutIcon} alt="ps_orkut" />
                     <h2>Acesse o Orkut</h2>
+                <div className='contentEmail'>
+                    <input type="email" placeholder="  Email" id="id-email" name="email" />
+                    <label htmlFor="floatingInput" id="id-email"></label>
+                </div>
 
+                <div className='contentPassword'>
+                    <input type="password" placeholder="  Password" id="id-password" autoComplete="off"/>
+                    <label htmlFor="floatingInput" id='id-password' ></label>
+                </div>
 
-                <label htmlFor="email"></label>
-                <input type="text" placeholder="E-mail" id="email" />
-
-                <label htmlFor="password"></label>
-                <input type="password" placeholder="Senha" id="password" />
-
-                
-                    <input className='passwordCheck' type="checkbox" name="remember-password" />
-                    <label htmlFor="remember-password">Lembrar minha senha</label>
-                
-
-                <button>Entrar na conta</button>
-                <button>Criar uma conta</button>
-                <a >Esqueci a minha senha</a>
+                <CheckPassword>
+                        <div className='CheckPassword'>
+                            <input className='passwordCheck' type="checkbox" name="remember-password" />
+                            <label htmlFor="remember-password">Lembrar minha senha</label>
+                        </div>
+                </CheckPassword>
+                    <Button $primary>Entrar na conta</Button>
+                    <Button>Criar uma conta</Button>
+                    <a>Esqueci a minha senha</a>
 
             </form>
         </FormsLogin>

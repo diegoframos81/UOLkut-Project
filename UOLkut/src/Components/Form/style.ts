@@ -33,7 +33,7 @@ export const FormsLogin = styled.form`
     }
 
 
-    form input {
+    form input[type=email],[type=password] {
         width: 19em;
         height: 3em;
         flex-shrink: 0;
@@ -48,6 +48,6 @@ export const FormsLogin = styled.form`
         line-height: normal;
         cursor: text;
     }
-
+    
 `;
 
