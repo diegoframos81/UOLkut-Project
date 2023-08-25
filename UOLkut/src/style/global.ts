@@ -9,6 +9,12 @@ export const GlobalStyle = createGlobalStyle`
         --text-title: #ED6D25
         --placeholder: #AACCEE;
         --input: #EFF3F8
+
+        --font-smallest: 0.8rem;
+        --font-small: 1.0rem;
+        --font-medium: 1.3rem;
+        --font-large: 1.4rem;
+        --font-largest: 1.8rem;
     }
     
     *{

@@ -81,18 +81,21 @@
         }
 
         .search-icon {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
+            
             margin-right: 8px;
         }
 
         .search-bar {
+            display: inline-flex;
+            
             border: none;
             background-color: transparent;
             outline: none;
             font-family: inherit;
             font-size: var(--font-small);
-            line-height: 24px;
+            line-height: 30px;
         }
 
         .user-profile {

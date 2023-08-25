@@ -21,7 +21,7 @@ const Navbar = () => {
                 <div className="nav-group-right">
                   <div className="search-bar-desktop-wrapper desktop-only">
                     <img src={searchIcon} alt="Pesquisar" className="search-icon" />
-                    <input type="search" placeholder="Pesquisar no Orkut" className="search-bar" />
+                    <input type="search" placeholder=" Pesquisar no Orkut" className="search-bar" />
                   </div>
                   <div className="user-profile">
                     <img src={userImage} alt="Usuário" className="user-profile-img" />

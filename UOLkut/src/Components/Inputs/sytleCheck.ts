@@ -27,14 +27,18 @@ export const CheckPassword = styled.div`
         box-shadow: 0px 0px 0px 3px var(--dark-25);
     }
 
-input:checked {
+    input:hover{
+        cursor: pointer;
+    }
+
+    input:checked {
         transition: 0.5s;
         background-color: var(--orange);
         cursor: pointer;
     }
 
-label {
-    margin-right: 11.5rem;
+    label {
+        margin-right: 11.5rem;
     
     color: #868686;
 }
