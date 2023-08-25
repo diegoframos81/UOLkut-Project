@@ -1,5 +1,6 @@
-import Navbar from "../Components/Main/Navbar"
-import Communities from "../Components/Main/cardCommunities"
+import Navbar from "../Components/NavbarProfile/Navbar"
+import Communities from "../Components/Communities/cardCommunities"
+import Friends from "../Components/CardFriends/Friends"
 
 
 const Profile = () => {
@@ -7,6 +8,7 @@ const Profile = () => {
         <>
             <Navbar />
             <Communities />
+            <Friends />
         </>
     )
 }

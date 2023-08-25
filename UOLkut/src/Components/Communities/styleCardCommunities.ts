@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ContentCommunitie = styled.div`
 
+position: relative;
+top: 5rem;
 .card-header {
     display: flex;
     flex-direction: row;
@@ -22,7 +24,7 @@ export const ContentCommunitie = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 30px 0px
+    padding: 20px 0px
 }
 
 .communities-thumb-container {

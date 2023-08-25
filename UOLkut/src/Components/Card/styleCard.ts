@@ -4,7 +4,7 @@ export const CardStyle = styled.div`
     margin-top: 20%;
     margin-left: 70%;
 .card-outer {
-    background: #FDFEFF;
+    background: var(--white);
     width: 55%;
     display: flex;
     border-radius: 16px;

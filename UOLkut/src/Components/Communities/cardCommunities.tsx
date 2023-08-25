@@ -1,4 +1,4 @@
-import Card from "./card";
+import Card from "../Card/card";
 import { ContentCommunitie } from "./styleCardCommunities";
 import photo1 from "../../assets/communities-pictures/photo1.svg"
 import photo2 from "../../assets/communities-pictures/photo2.svg";
@@ -13,8 +13,8 @@ import photo9 from "../../assets/communities-pictures/photo7.svg";
 
 const Communities: React.FC = () => {
     return (
-        <Card>
-            <ContentCommunitie>
+        <ContentCommunitie>
+                <Card>
                 <header className="card-header">
                     <span>Comunidade (42)</span>
                     <span className="seeAll">Ver todos</span>
@@ -63,8 +63,8 @@ const Communities: React.FC = () => {
                         </div>
                     </div>
                 </section>
-            </ContentCommunitie>
-        </Card>
+                </Card>
+        </ContentCommunitie>
     );
 };
 
