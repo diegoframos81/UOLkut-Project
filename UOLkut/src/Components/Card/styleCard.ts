@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-    margin-top: 20%;
-    margin-left: 70%;
+    
 .card-outer {
     background: var(--white);
-    width: 55%;
+    width: 100%;
     display: flex;
     border-radius: 16px;
     flex-direction: column;

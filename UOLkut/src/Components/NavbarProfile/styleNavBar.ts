@@ -19,7 +19,7 @@
             height: 78px;
             display: flex;
             justify-content: center;
-            font-family: SF Pro Display;
+            
             font-style: normal;
             font-weight: 400;
             line-height: 24px;
@@ -30,19 +30,20 @@
             display: flex;
             justify-content: space-between;
             height: 100%;
-            width: 85vw;
+            width: auto;
         }
 
         .nav-group-left,
         .nav-group-right {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
         }
 
         .img-nav {
-            width: 107px;
+            width: 108px;
             height: 32px;
+            margin-right: 20px;
             flex-shrink: 0;
         }
 
@@ -101,7 +102,7 @@
         .user-profile {
             display: flex;
             align-items: center;
-            margin-left: 10px;
+            margin-left: 20rem;
             padding: 20px;
             gap: 2px;
         }
@@ -136,7 +137,9 @@
         }
 
         @media screen and (max-width: 1279px) {
+            
             .navbar-content {
+            
             flex-direction: row;
             justify-content: space-between;
             }
@@ -145,7 +148,7 @@
             .nav-group-right {
             display: flex;
             align-items: center;
-            width: 50%;
+            width: 80%;
             }
 
             .nav-group-left {

@@ -1,6 +1,6 @@
 import logo from '../../assets/logo.svg';
 import searchIcon from '../../assets/searchIcon.svg';
-import userImage from '../../assets/userImage.svg';
+import userImage from '../../assets/Profile/userImage.svg';
 import { ContainerProfile, ContentProfile } from './styleNavBar';
 
 

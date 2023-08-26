@@ -1,8 +1,9 @@
 
 
-import Profile from './Pages/Profile'
-import { GlobalStyle } from './style/global'
+
+import { GlobalStyle } from '../style/global'
 // import   Login  from './Pages/Login'
+import { RoutesApp } from '../Routes/RoutesApp'
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
       
       
       {/* <Login /> */}
-      <Profile />
+      <RoutesApp />
       <GlobalStyle />
       
     </>

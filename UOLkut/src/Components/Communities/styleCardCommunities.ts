@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const ContentCommunitie = styled.div`
 
-position: relative;
-top: 5rem;
+
 .card-header {
     display: flex;
     flex-direction: row;

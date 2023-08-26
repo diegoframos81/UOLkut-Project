@@ -1,0 +1,47 @@
+import styled from "styled-components";
+
+export const ContainerEditProfile = styled.div`
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.edit-profile-container div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.edit-profile-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.edit-profile-container input,
+.edit-profile-container select {
+  border-radius: 30px;
+  border: 1px solid var(--orange);
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 50rem;
+}
+
+.edit-profile-container select {
+  width: 50rem;
+}
+
+.edit-profile-container button {
+  border-radius: 30px;
+  border: none;
+  background-color: var(--orange);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+
+`

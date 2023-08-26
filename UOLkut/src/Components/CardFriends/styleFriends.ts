@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContentFriends = styled.div`
     
-    position: relative;
-    top: -77rem;
+
+    
 
 
     .card-header {

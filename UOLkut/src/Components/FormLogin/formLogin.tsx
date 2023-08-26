@@ -2,9 +2,11 @@ import orkutIcon from '../../assets/orkutIcon.svg';
 import { CheckPassword } from '../Inputs/sytleCheck';
 import { FormsLogin } from './style';
 import { Button } from '../Inputs/styleButtons';
+import { useNavigate } from 'react-router-dom';
 
 
 const FormLogin = () => {
+    const navigate = useNavigate();
     return (
         
         <FormsLogin>
@@ -30,8 +32,8 @@ const FormLogin = () => {
                         </div>
                 </CheckPassword>
                 
-                    <Button $primary>Entrar na conta</Button>
-                    <Button>Criar uma conta</Button>
+                    <Button $primary onClick={() =>navigate("/Profile")}>Entrar na conta</Button>
+                    <Button onClick={() =>navigate("/Register")}>Criar uma conta</Button>
                     <a>Esqueci a minha senha</a>
 
             </form>

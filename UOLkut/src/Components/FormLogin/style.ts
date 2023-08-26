@@ -14,6 +14,7 @@ export const FormsLogin = styled.form`
         margin-left: 60rem;
         margin-top: -50rem;
         gap: 20px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
     form img {
         width: 60px;

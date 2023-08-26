@@ -1,14 +1,12 @@
-import Navbar from "../Components/NavbarProfile/Navbar"
-import Communities from "../Components/Communities/cardCommunities"
-import Friends from "../Components/CardFriends/Friends"
+
+import ProfileLayout from "../Layout/ProfileLayout/ProfileLayout"
 
 
 const Profile = () => {
     return (
         <>
-            <Navbar />
-            <Communities />
-            <Friends />
+            <ProfileLayout />
+            
         </>
     )
 }

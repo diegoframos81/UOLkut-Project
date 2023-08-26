@@ -3,16 +3,17 @@ import ImageLogin from '../../assets/imageform.svg'
 import Bg from '../../assets/bg.svg'
 
 import { ReactElement } from 'react';
-import { ContainerMain, ContentMain } from './style';
-import FormLogin from '../FormLogin/formLogin';
+import { ContainerMainForms, ContentMainForms } from './styleMain';
 
-export const MainForm: React.FC = (): ReactElement => {
+import FormRegister from '../FormRegister/formRegister';
+
+export const MainForms: React.FC = (): ReactElement => {
 
     
     return (
         <>
-            <ContainerMain>
-                <ContentMain>
+            <ContainerMainForms>
+                <ContentMainForms>
                     <main >
                         <div className='gradient'>
                             <img src={ImageLogin} alt="Image Login" />
@@ -23,9 +24,9 @@ export const MainForm: React.FC = (): ReactElement => {
                             usando recados e mensagens instantâneas</p>
                         
                     </main>
-                    <FormLogin/>
-                </ContentMain>
-            </ContainerMain>
+                    <FormRegister/>
+                </ContentMainForms>
+            </ContainerMainForms>
         </>
     );
 };

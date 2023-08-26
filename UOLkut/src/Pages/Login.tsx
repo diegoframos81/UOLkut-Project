@@ -1,16 +1,11 @@
 
-import { FooterLogin } from "../Components/Footer/footer"
-import { HeaderLogin } from "../Components/Header/header"
-import { MainForm } from "../Components/MainLogin/main"
+import LoginLayout from "../Layout/Login Layout/LoginLayout"
 
 
 const Login = () => {
     return (
         <div>
-            <HeaderLogin />
-            <MainForm/>
-            <FooterLogin />
-            
+            <LoginLayout />
         </div>
     )
 }
