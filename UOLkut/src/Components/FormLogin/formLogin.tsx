@@ -16,12 +16,12 @@ const FormLogin = () => {
                     <h2>Acesse o Orkut</h2>
                     
                         <div className='contentEmail'>
-                            <input type="email" placeholder="  " id="input-email" name="email" />
+                            <input type="email" placeholder="  " id="input-email" name="email" required/>
                             <label htmlFor="input-email" className={'id-email'}>E-mail</label>
                         </div>
 
                         <div className='contentPassword'>
-                            <input type="password" placeholder="  " id="input-password" autoComplete="off"/>
+                            <input type="password" placeholder="  " id="input-password" autoComplete="off" required/>
                             <label htmlFor="input-password" className={'id-password'}>Password</label>
                         </div>
                     
