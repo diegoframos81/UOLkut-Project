@@ -55,6 +55,14 @@ form {
         gap: 20px;
     }
 
+    label {
+        color: var(--input-text);
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
     
     #input-date, #input-country, #input-Job, #input-city, #input-select{
         width: 10rem;
@@ -80,6 +88,11 @@ form {
         color: black !important;
     }
 
+    form input[type=submit]{
+        display: none !important;
+        
+
+    }
     form input[type=email],[type=password], #input-name{
         width: 21em;
         height: 3.5em;
@@ -116,9 +129,15 @@ form {
         left: 83.5rem;
     }
 
+    label.id-date{
+        position: absolute;
+        top: 39.7rem;
+        left: 83.5rem;
+    }
+
     label.id-country{
         position: absolute;
-        top: 45.4rem;
+        top: 44.5rem;
         left: 83.5rem;
     }
 
@@ -168,9 +187,21 @@ form {
         -webkit-transition:0.2s ease-in;
     }
 
+    input:focus + label.id-date {
+        font-size: 18px;
+        top: 37rem;
+        left: 82.7rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
     input:focus + label.id-country {
         font-size: 18px;
-        top: 42.9rem;
+        top: 41.9rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;

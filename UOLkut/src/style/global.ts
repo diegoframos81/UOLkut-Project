@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         --text-title: #ED6D25
         --placeholder: #AACCEE;
         --input: #EFF3F8
+        --input-text: #868686;
 
         --font-smallest: 0.8rem;
         --font-small: 1.0rem;

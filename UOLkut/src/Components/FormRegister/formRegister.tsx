@@ -3,9 +3,20 @@ import orkutIcon from "../../assets/orkutIcon.svg";
 import { Button } from "../Inputs/styleButtons";
 import { useNavigate } from "react-router-dom";
 import { ContentFormRegister } from "./style";
+import { useState } from "react";
 
 const FormRegister = () => {
+    const [ email, setEmail ] = useState('');
+    const [ password, setPassword ] = useState('');
+    const [ name, setName ] = useState('');
+    const [ date, setDate ] = useState('');
+    const [ coutry, setCountry ] = useState('');
+    const [ job, setJob ] = useState('');
+    const [ city, setCity ] = useState('');
+    const [ relationship, setRelationship ] = useState('');
+
     const navigate = useNavigate();
+    
     return (
         <ContentFormRegister>
             <form>
@@ -15,10 +26,12 @@ const FormRegister = () => {
                 <div className="contentEmail">
                     <input
                         type="email"
+                        value={email}
                         placeholder="  "
                         id="input-email"
                         name="email"
                         autoComplete="off"
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                     <label htmlFor="input-email" className={"id-email"}>
@@ -29,9 +42,11 @@ const FormRegister = () => {
                 <div className="contentPassword">
                     <input
                         type="password"
+                        value={password}
                         placeholder="  "
                         id="input-password"
                         autoComplete="off"
+                        onChange={(e) => setPassword(e.target.value)}
                         required
                     />
                     <label htmlFor="input-password" className={"id-password"}>
@@ -42,9 +57,11 @@ const FormRegister = () => {
                 <div className="contentName">
                     <input
                         type="text"
+                        value={name}
                         placeholder="  "
                         id="input-name"
                         autoComplete="off"
+                        onChange={(e) => setName(e.target.value)}
                         required
                     />
                     <label htmlFor="input-name" className={"id-name"}>
@@ -56,18 +73,24 @@ const FormRegister = () => {
                     <div id="first-column">
                         <input
                             type="date"
-                            placeholder="Nascimento "
+                            value={date}
+                            placeholder=" "
                             id="input-date"
                             autoComplete="off"
+                            onChange={(e) => setDate(e.target.value)}
                             required
                         />
-                        <label htmlFor="input-date" className={"id-date"}></label>
+                        <label htmlFor="input-date" className={"id-date"}>
+                            Nascimento
+                        </label>
 
                         <input
                             type="text"
+                            value={coutry}
                             placeholder="  "
                             id="input-country"
                             autoComplete="off"
+                            onChange={(e) => setCountry(e.target.value)}
                             required
                         />
                         <label htmlFor="input-country" className={"id-country"}>
@@ -79,9 +102,11 @@ const FormRegister = () => {
                         <div className="contentJob">
                             <input
                                 type="text"
+                                value={job}
                                 placeholder="  "
                                 id="input-Job"
                                 autoComplete="off"
+                                onChange={(e) => setJob(e.target.value)}
                                 required
                             />
                             <label htmlFor="input-Job" className={"id-job"}>
@@ -92,9 +117,11 @@ const FormRegister = () => {
                         <div className="contentCity">
                             <input
                                 type="text"
+                                value={city}
                                 placeholder="  "
                                 id="input-city"
                                 autoComplete="off"
+                                onChange={(e) => setCity(e.target.value)}
                                 required
                             />
                             <label htmlFor="input-city" className={"id-city"}>
@@ -102,7 +129,7 @@ const FormRegister = () => {
                             </label>
                         </div>
                         <div className="contentRelationShip">
-                            <select name="relationship" id="input-select" required>
+                            <select name="relationship" value={relationship} id="input-select" required  onChange={(e) => setRelationship(e.target.value)}>
                                 <option value="">Relacionamento</option>
                                 <option value="Solteiro">Solteiro</option>
                                 <option value="Casado">Casado</option>
@@ -115,7 +142,7 @@ const FormRegister = () => {
                 </div>
 
                 <Button $primary onClick={() => navigate("/")} className="button">
-                    Criar Conta
+                    <input type="submit" value=""/> Criar Conta 
                 </Button>
             </form>
         </ContentFormRegister>
