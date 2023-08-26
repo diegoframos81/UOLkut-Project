@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Content } from "./style";
 
 
@@ -7,9 +8,11 @@ export const HeaderLogin = () => {
             <Container>
                 <Content>
                     <nav>
-                        <a>
+                        
+                        <Link to={"/"}>
                             <span>UOLkut</span>
-                        </a>
+                        </Link>
+                        
                             <p>Centro de segurança</p>
                     </nav>
                 </Content>

@@ -1,3 +1,4 @@
+
 import styled from 'styled-components';
 
 export const Container = styled.header`
@@ -41,4 +42,5 @@ export const Content = styled.div`
         font-weight: 400;
         line-height: 24px;
     }
+
 `;

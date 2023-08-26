@@ -110,6 +110,10 @@ form {
         cursor: text;
         
     }
+
+    label {
+        color: #868686;
+    }
     
     label.id-name {
         position: absolute;
@@ -222,6 +226,85 @@ form {
     }
 
     input:focus + label.id-city {
+        font-size: 18px;
+        top: 41.8rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+    
+    input:valid + label.id-email {
+        
+
+        font-size: 18px;
+        top: 19.5rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+    input:valid + label.id-password {
+        font-size: 18px;
+        top: 25.3rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
+    input:valid + label.id-name {
+        font-size: 18px;
+        top: 31.2rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
+    input:valid + label.id-date {
+        font-size: 18px;
+        top: 37rem;
+        left: 82.7rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
+    input:valid + label.id-country {
+        font-size: 18px;
+        top: 41.9rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
+    input:valid + label.id-job {
+        font-size: 18px;
+        top: 36.9rem;
+        font-weight: bold;
+        color: var(--orange);
+        pointer-events:none;
+        transition:0.2s ease-in; 
+        -moz-transition:0.2s ease-in; 
+        -webkit-transition:0.2s ease-in;
+    }
+
+    input:valid + label.id-city {
         font-size: 18px;
         top: 41.8rem;
         font-weight: bold;

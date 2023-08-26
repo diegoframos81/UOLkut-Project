@@ -6,11 +6,11 @@ export const GlobalStyle = createGlobalStyle`
         --background: #D9E6F7;
         --white: #FDFEFF;
         --orange: #ED6D25;
+        --text: #868686;
 
         --text-title: #ED6D25
         --placeholder: #AACCEE;
         --input: #EFF3F8
-        --input-text: #868686;
 
         --font-smallest: 0.8rem;
         --font-small: 1.0rem;
@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        text-decoration: none;
     }
     
     // font-size: 16px; (Desktop)

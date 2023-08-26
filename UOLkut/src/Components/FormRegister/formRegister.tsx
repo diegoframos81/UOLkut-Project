@@ -4,22 +4,58 @@ import { Button } from "../Inputs/styleButtons";
 import { useNavigate } from "react-router-dom";
 import { ContentFormRegister } from "./style";
 import { useState } from "react";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { auth } from "../../service/FireBaseConfig";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { firebaseConfig } from "../../service/FireBaseConfig";
 
 const FormRegister = () => {
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
     const [ name, setName ] = useState('');
     const [ date, setDate ] = useState('');
-    const [ coutry, setCountry ] = useState('');
+    const [ country, setCountry ] = useState('');
     const [ job, setJob ] = useState('');
     const [ city, setCity ] = useState('');
     const [ relationship, setRelationship ] = useState('');
 
-    const navigate = useNavigate();
     
+    const [createUserWithEmailAndPassword,] =
+        useCreateUserWithEmailAndPassword(auth);
+    const db = getFirestore(firebaseConfig);
+    const listUser = collection(db,"dbUolkut");
+
+
+
+    const navigate = useNavigate();
+
+    const handleFormSubmit = async (event: React.SyntheticEvent) => {
+            event.preventDefault();
+            try{
+                const createUser = await createUserWithEmailAndPassword(email, password);
+                console.log(createUser);
+                const userValues = await addDoc(listUser,{
+                    email,
+                    city,
+                    country,
+                    date,
+                    job,
+                    name,
+                    password,
+                    relationship,
+                }); 
+                console.log(userValues);
+
+        }catch (error) {
+
+            console.log("error:", error);
+            
+        }
+        navigate("/");
+    };
     return (
         <ContentFormRegister>
-            <form>
+            <form onSubmit={handleFormSubmit}>
                 <img src={orkutIcon} alt="ps_orkut" />
                 <h2>Cadastre-se o UOLkut</h2>
 
@@ -86,7 +122,7 @@ const FormRegister = () => {
 
                         <input
                             type="text"
-                            value={coutry}
+                            value={country}
                             placeholder="  "
                             id="input-country"
                             autoComplete="off"
@@ -141,12 +177,13 @@ const FormRegister = () => {
                     </div>
                 </div>
 
-                <Button $primary onClick={() => navigate("/")} className="button">
+                <Button $primary className="button">
                     <input type="submit" value=""/> Criar Conta 
                 </Button>
             </form>
         </ContentFormRegister>
     );
 };
+
 
 export default FormRegister;

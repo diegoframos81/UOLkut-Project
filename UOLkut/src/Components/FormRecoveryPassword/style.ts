@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const FormsLogin = styled.form`
+export const FormsRecovery = styled.form`
 
     form {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         width: 28em;
         height: 41.5em;
         flex-shrink: 0;
@@ -19,13 +19,14 @@ export const FormsLogin = styled.form`
     form img {
         width: 60px;
         height: 60px;
-        padding-top: 10px;
+        padding-top: 20px;
         margin: 0 auto;
         
     }
 
     form a{
         color: var(--orange);
+        padding-top: 5rem;
     }
 
     form h2 {
@@ -35,7 +36,7 @@ export const FormsLogin = styled.form`
         font-weight: 600;
         line-height: normal;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
 
     form input[type=submit]{
@@ -44,7 +45,7 @@ export const FormsLogin = styled.form`
 
     }
 
-    form input[type=email],[type=password] {
+    form input[type=email] {
         width: 21em;
         height: 3.5em;
         flex-shrink: 0;
@@ -68,13 +69,7 @@ export const FormsLogin = styled.form`
     
     label.id-email {
         position: absolute;
-        top: 25.2rem;
-        left: 83.5rem;
-    }
-
-    label.id-password{
-        position: absolute;
-        top: 32rem;
+        top: 26.2rem;
         left: 83.5rem;
     }
 
@@ -82,17 +77,7 @@ export const FormsLogin = styled.form`
         
 
         font-size: 18px;
-        top: 22.6rem;
-        font-weight: bold;
-        color: var(--orange);
-        pointer-events:none;
-        transition:0.2s ease-in; 
-        -moz-transition:0.2s ease-in; 
-        -webkit-transition:0.2s ease-in;
-    }
-    input:focus + label.id-password {
-        font-size: 18px;
-        top: 29.3rem;
+        top: 23.3rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -105,18 +90,10 @@ export const FormsLogin = styled.form`
         
 
         font-size: 18px;
-        top: 22.6rem;
+        top: 23.3rem;
         font-weight: bold;
         color: var(--orange);
     }
-
-    input:valid + label.id-password {
-        font-size: 18px;
-        top: 29.3rem;
-        font-weight: bold;
-        color: var(--orange);
-    }
-
     
 `;
 
