@@ -41,8 +41,8 @@
         }
 
         .img-nav {
-            width: 108px;
-            height: 32px;
+            width: 110px;
+            height: 33px;
             margin-right: 20px;
             flex-shrink: 0;
         }

@@ -41,7 +41,7 @@ const FormLogin = () => {
     
     return (
             <FormsLogin>
-            <form>
+            <form onSubmit={AuthLogin}>
                 <img src={orkutIcon} alt="ps_orkut" />
                 <h2>Acesse o Orkut</h2>
 

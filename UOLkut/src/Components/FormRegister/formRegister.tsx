@@ -167,10 +167,15 @@ const FormRegister = () => {
                         <div className="contentRelationShip">
                             <select name="relationship" value={relationship} id="input-select" required  onChange={(e) => setRelationship(e.target.value)}>
                                 <option value="">Relacionamento</option>
+                                <hr />
                                 <option value="Solteiro">Solteiro</option>
+                                <hr />
                                 <option value="Casado">Casado</option>
+                                <hr />
                                 <option value="Divorciado">Divorciado</option>
+                                <hr />
                                 <option value="Namorando">Namorando</option>
+                                <hr />
                                 <option value="Preocupado">Preocupado</option>
                             </select>
                         </div>

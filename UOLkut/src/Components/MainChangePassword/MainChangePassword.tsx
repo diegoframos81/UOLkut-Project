@@ -4,11 +4,9 @@ import Bg from '../../assets/bg.svg'
 
 import { ReactElement } from 'react';
 import { ContainerMain, ContentMain } from './style';
+import FormChangePassword from '../FormRecoveryPassword/Step2Form/FormChangePassword';
 
-
-import FormRecovery from '../FormRecoveryPassword/Step1Form/FormRecovery';
-
-export const MainRecovery: React.FC = (): ReactElement => {
+export const MainChangePassword: React.FC = (): ReactElement => {
 
     
     return (
@@ -25,7 +23,7 @@ export const MainRecovery: React.FC = (): ReactElement => {
                             usando recados e mensagens instantâneas</p>
                         
                     </main>
-                    <FormRecovery />
+                    <FormChangePassword />
                 </ContentMain>
             </ContainerMain>
         </>

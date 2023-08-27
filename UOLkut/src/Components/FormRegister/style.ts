@@ -110,7 +110,7 @@ form {
         cursor: text;
         
     }
-
+    
     label {
         color: #868686;
     }

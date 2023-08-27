@@ -94,6 +94,8 @@ export const FormsRecovery = styled.form`
         font-weight: bold;
         color: var(--orange);
     }
+
+    
     
 `;
 

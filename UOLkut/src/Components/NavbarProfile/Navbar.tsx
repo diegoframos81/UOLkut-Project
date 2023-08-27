@@ -2,6 +2,7 @@ import logo from '../../assets/logo.svg';
 import searchIcon from '../../assets/searchIcon.svg';
 import userImage from '../../assets/Profile/userImage.svg';
 import { ContainerProfile, ContentProfile } from './styleNavBar';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -12,7 +13,9 @@ const Navbar = () => {
             <nav className="navbar">
               <div className='navbar-content'>
                 <div className="nav-group-left">
-                  <img className='img-nav' src={logo} alt="Logo"/>
+                  <Link to={"/"}> 
+                    <img className='img-nav' src={logo} alt="Logo"/>
+                  </Link>
                   <span className="nav-link desktop-only">Início</span>
                   <span className="nav-link desktop-only profile-link">Perfil</span>
                   <span className="nav-link desktop-only">Comunidades</span>

@@ -1,6 +1,6 @@
 
-import { Button } from '../Inputs/styleButtons'
-import orkutIcon from "../../assets/orkutIcon.svg";
+import { Button } from '../../Inputs/styleButtons'
+import orkutIcon from "../../../assets/orkutIcon.svg";
 import { FormsRecovery } from './style';
 import { useNavigate } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const FormRecovery = () => {
                         </label>
                         </div>
 
-                        <Button $primary>
+                        <Button $primary onClick={() => navigate("/ChangePassword")}> 
                             <input type="submit" className="submit" />
                                 Enviar código
                         </Button>

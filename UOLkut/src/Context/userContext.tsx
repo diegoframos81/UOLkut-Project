@@ -31,7 +31,7 @@ const defaultUser: UserDataType = {
   País: 'Brasil',
   Cidade_natal: 'São Paulo',
   Músicas: 'Trap  Rap  Indie  Rock',
-  Filmes: 'A rede social  Meu amigo Totoro  O castelo animado  Princesa Mononoke',
+  Filmes: 'A rede social  O castelo animado  Princesa Mononoke',
 };
 
 export interface UserContextType {
