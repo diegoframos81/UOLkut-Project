@@ -46,18 +46,27 @@ export const ContainerUserHeaderInfo = styled.div`
 }
 
 .user-info .balloon-box {
-  background-color: #EFF3F8;
-  border: 1px solid #ccc;
+  background-color: transparent !important;
+  
   border-radius: 10px;
   padding: 10px 15px;
   margin-top: 10px;
   word-wrap: break-word;
-  margin-bottom: 24px;
   font-size: var(--font-small);
 }
 
 .user-info-all>div {
   margin-bottom: 24px;
   font-size: var(--font-small);
+}
+
+.balloon-box img {
+  width: 100%
+}
+
+.balloon-box p{
+  position: absolute;
+  top: 15.8rem;
+  left: 51.5rem;
 }
 `

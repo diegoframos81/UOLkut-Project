@@ -1,47 +1,107 @@
 import styled from "styled-components";
 
 export const ContainerEditProfile = styled.div`
-.edit-profile-container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
+
+    border-radius: 8px;
+    border: none;
+    margin-top: 7.5rem;
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+
+    h2 {
+        color: #ED6D25;
+        font-family: Roboto Flex;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        gap: 10px;
+        margin-left: 15rem;
+        margin-top: 5px;
+        margin-bottom: 2.5rem;
+    }
+
+input[type="submit"]{
+  display: none;
 }
 
-.edit-profile-container div {
-  margin-bottom: 10px;
-  width: 100%;
-}
+label {
+        color: var(--input-text);
+        font-family: Roboto Flex;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.edit-profile-container label {
-  display: block;
-  margin-bottom: 5px;
-}
+  .first-column{
+    width: 50%;
+  }
+  .second-column{
+    position: relative;
+    top: -34.3rem;
+    width: 50%;
+    
+    margin-left: 25rem;
+    
+  }
 
-.edit-profile-container input,
-.edit-profile-container select {
-  border-radius: 30px;
-  border: 1px solid var(--orange);
-  padding: 10px 20px;
-  font-size: 16px;
-  width: 50rem;
-}
+form input[type=text],[type=password], [type=date] {
+        width: 17em;
+        height: 3em;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: none;
+        background: #EFF3F8;
+        color: #868686;
+        margin-bottom: 21.5px;
+        padding: 1.25rem;
+        
+        font-size: 19px;
+        font-style: normal;
+        line-height: normal;
+        cursor: text;
+        
+    }
+    #input-select{
+        
+        width: 14em;
+        height: 3.4rem;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: none;
+        background: #EFF3F8;
+        color: #868686;
+        
+        padding-left: 0.5rem;
+        
+        font-size: 19px;
+        font-style: normal;
+        line-height: normal;
+        appearance: none;
+    }
 
-.edit-profile-container select {
-  width: 50rem;
-}
+    select option{
+      border-bottom: #ED6D25;
+    }
 
-.edit-profile-container button {
-  border-radius: 30px;
-  border: none;
-  background-color: var(--orange);
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 20px;
-  cursor: pointer;
-  align-self: flex-start;
-}
+    .caretDown{
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
+        top: 16.5rem;
+        left: 93rem;
+    }
 
-
+    .SaveButtom{
+      display: flex;
+      
+      margin-left: 7.5rem;
+    }
 `

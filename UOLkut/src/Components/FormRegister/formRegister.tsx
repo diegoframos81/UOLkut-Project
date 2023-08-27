@@ -1,5 +1,5 @@
 import orkutIcon from "../../assets/orkutIcon.svg";
-
+import CaretDown from "../../assets/CaretDown.svg"
 import { Button } from "../Inputs/styleButtons";
 import { useNavigate } from "react-router-dom";
 import { ContentFormRegister } from "./style";
@@ -33,15 +33,15 @@ const FormRegister = () => {
             event.preventDefault();
             try{
                 const createUser = await createUserWithEmailAndPassword(email, password);
+                
                 console.log(createUser);
                 const userValues = await addDoc(listUser,{
-                    email,
+                    uid:createUser?.user.uid,
                     city,
                     country,
                     date,
                     job,
                     name,
-                    password,
                     relationship,
                 }); 
                 console.log(userValues);
@@ -166,7 +166,7 @@ const FormRegister = () => {
                         </div>
                         <div className="contentRelationShip">
                             <select name="relationship" value={relationship} id="input-select" required  onChange={(e) => setRelationship(e.target.value)}>
-                                <option value="">Relacionamento</option>
+                                <option value="" disabled>Relacionamento</option> 
                                 <hr />
                                 <option value="Solteiro">Solteiro</option>
                                 <hr />
@@ -178,6 +178,8 @@ const FormRegister = () => {
                                 <hr />
                                 <option value="Preocupado">Preocupado</option>
                             </select>
+
+                            <img src={CaretDown} className="caretDown" alt="seta" />
                         </div>
                     </div>
                 </div>

@@ -64,6 +64,10 @@ form {
         line-height: normal;
     }
     
+    #input-select{
+        appearance: none;
+    }
+
     #input-date, #input-country, #input-Job, #input-city, #input-select{
         width: 10rem;
         height: 3.5rem;
@@ -313,5 +317,13 @@ form {
         transition:0.2s ease-in; 
         -moz-transition:0.2s ease-in; 
         -webkit-transition:0.2s ease-in;
+    }
+
+    .caretDown{
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 48.8rem;
+        left: 105.5rem;
     }
 `;

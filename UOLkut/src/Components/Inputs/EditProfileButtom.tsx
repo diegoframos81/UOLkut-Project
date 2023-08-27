@@ -7,7 +7,7 @@ import { ContainerButton } from './styleEditButtom';
 const EditProfileButton: React.FC = () => {
     const navigate = useNavigate();
     const handleEditProfileClick = () => {
-        navigate('/edit');
+        navigate('/EditProfile');
     };
 
     return (

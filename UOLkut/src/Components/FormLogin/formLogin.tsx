@@ -22,7 +22,7 @@ const FormLogin = () => {
         const user = userCredential.user;
 
         console.log(user);
-
+        setUid(userCredential.user?.uid);
         navigate('/Profile');
 
         })
