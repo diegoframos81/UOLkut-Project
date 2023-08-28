@@ -30,9 +30,9 @@
 * To run the project, type in the terminal
 
   ```bash
-  yarn start
-     or
-  npm start
+  npm run dev
+    # or
+  yarn dev
   ```
 
 ## Tecnologies 
