@@ -68,13 +68,13 @@ export const FormsLogin = styled.form`
     
     label.id-email {
         position: absolute;
-        top: 25.2rem;
+        top: 25rem;
         left: 83.5rem;
     }
 
     label.id-password{
         position: absolute;
-        top: 32rem;
+        top: 31.5rem;
         left: 83.5rem;
     }
 
@@ -82,7 +82,7 @@ export const FormsLogin = styled.form`
         
 
         font-size: 18px;
-        top: 22.6rem;
+        top: 21.6rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -92,7 +92,7 @@ export const FormsLogin = styled.form`
     }
     input:focus + label.id-password {
         font-size: 18px;
-        top: 29.3rem;
+        top: 28.3rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;

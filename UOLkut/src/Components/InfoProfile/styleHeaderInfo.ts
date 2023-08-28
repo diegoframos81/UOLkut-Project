@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const ContainerUserHeaderInfo = styled.div`
     
-    .user-profile-container {
+.user-profile-container {
   display: flex;
   
 }
 
 .user-profile-box {
   
-  /* height: 854px; */
+  
   flex-shrink: 0;
   border-radius: 16px;
   padding: 15px;
@@ -59,16 +59,23 @@ export const ContainerUserHeaderInfo = styled.div`
   margin-bottom: 24px;
   font-size: var(--font-small);
 }
-
+.balloon-box {
+  overflow-x: hidden;
+  height: 5rem;
+}
 .balloon-box img {
+  
   margin-top: -1.5rem;
   width: 90%
 }
 
 .balloon-box p{
+  margin-left: 20px;
   position: absolute;
-  top: 15.3rem;
-  left: 54.5rem;
+  top: 15.5rem;
+  
+  
+  
 }
 
 .user_details {
@@ -119,35 +126,38 @@ export const ContainerUserHeaderInfo = styled.div`
   border-radius: 30px;
   border: 1px solid var(--orange);
 }
-@media (max-width:1200px) {
+@media (max-width:1300px) {
+
+  .balloon-box img {
+    width: 100%
+  }
   .balloon-box p{
-  position: absolute;
-  top: 15.3rem;
-  left: 43rem;
+    position: absolute;
+    top: 73.5rem;
+  }
 }
+@media (max-width: 1000px) {
+  .balloon-box p{
+    position: absolute;
+    top: 77.2rem;
+  }
 }
 @media (max-width: 800px) {
 
   .balloon-box img {
-    width: 80%
+    width: 75%
   }
+
+  .balloon-box p{
+    position: absolute;
+    top: 80.6rem;
+  }
+
   .profileInfoContainer {
-    width: 100%;
+    width: 90%;
   }
 
-  .profileInfoContainer blockquote {
-    margin-top: 1.5rem;
-    position: relative;
-
-    height: 5rem;
-  }
-
-  .profileInfoContainer blockquote p {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 100%;
-  }
+  
 
   .user_details {
     font-size: .8rem;
@@ -156,11 +166,11 @@ export const ContainerUserHeaderInfo = styled.div`
   .multiple_options_field_details dd,
   .multiple_options_field_details span {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .multiple_options_field_details dd {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .profileInfoContainer p{
     bottom: 68%;

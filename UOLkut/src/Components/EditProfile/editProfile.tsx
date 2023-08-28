@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const FormEditProfile = () => {
     const navigate = useNavigate();
+    
     const [formData, setFormData] = useState({
         job: "",
         name: "",
@@ -16,7 +17,7 @@ const FormEditProfile = () => {
         confirmPassword: "",
         relationship: "",
     });
-
+    
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleChange = (event: { target: { name: any; value: any } }) => {
         const { name, value } = event.target;

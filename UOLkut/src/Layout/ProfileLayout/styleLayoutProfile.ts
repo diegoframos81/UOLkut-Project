@@ -23,11 +23,11 @@ export const ContainerLayout = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    gap: 25px;
+    gap: 20px;
     }
 
     .left-section {
-        margin-left: 10%;
+        
         width: 23%;
     }
 
@@ -55,7 +55,7 @@ export const ContainerLayout = styled.div`
     }
 
     .left-section {
-        width: 100%;
+        width: 90%;
     }
 
     .center-section {
@@ -79,21 +79,4 @@ export const ContainerLayout = styled.div`
     }
     }
 
-    @media (max-width: 800px) {
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .isDesktop {
-    display: none;
-  }
-
-  .isMobile {
-    display: block;
-    order: 1;
-  }
-
-  
-}
 `

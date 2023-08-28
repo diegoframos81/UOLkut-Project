@@ -30,14 +30,15 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
 
-        
+        overflow-x: none;
     }
     
     // font-size: 16px; (Desktop)
     html {
-        
+        overflow-x: none;
         @media (max-width: 1050px) {
             font-size: 93.75%; // 15px
+            overflow-x: none;
 
         
 
@@ -45,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (max-width: 720px){
             font-size: 87.5%; // 14px
-            
+            overflow-x: none;
         }
     }
 

@@ -48,10 +48,11 @@ const ProfileLayout: React.FC = () => {
 
             {!isMobile && 
             <div className="profile-section center-section">
-              <Routes>
-                <Route path="/" element={<ProfileInfo />} />
-                <Route path="/EditProfile" element={<EditProfile />} />
-              </Routes>
+              
+                <Routes>
+                  <Route path="/" element={<ProfileInfo />} />
+                  <Route path="/EditProfile" element={<EditProfile />} />
+                </Routes>
             </div>
             }
 
@@ -59,7 +60,7 @@ const ProfileLayout: React.FC = () => {
               <Friends />
               {isMobile && 
                 <Routes>
-                  <Route path="/Profile" element={<ProfileInfo />} />
+                  <Route path="/" element={<ProfileInfo />} />
                   <Route path="/EditProfile" element={<EditProfile />} />
                 </Routes>
               }

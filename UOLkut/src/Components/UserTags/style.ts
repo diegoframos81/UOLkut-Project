@@ -36,4 +36,40 @@ export const ContainersUserTag = styled.div`
     width: 24px;
     height: 24px;
     }
+
+    @media (max-width:800px) {
+        .user-tags{
+            width: 75%;
+        }
+    }
+
+    ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    margin: 0;
+    gap: 50px;
+    }
+
+    li {
+    color: #4B4B4B;
+    
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    .tag-content {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    }
+
+    img {
+    width: 25px;
+    height: 25px;
+    }
 `

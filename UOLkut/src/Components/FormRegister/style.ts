@@ -127,32 +127,32 @@ form {
 
     label.id-email {
         position: absolute;
-        top: 22.5rem;
+        top: 22rem;
         left: 83.5rem;
     }
 
     label.id-password{
         position: absolute;
-        top: 28.2rem;
+        top: 28rem;
         left: 83.5rem;
     }
 
     label.id-date{
         position: absolute;
-        top: 39.7rem;
+        top: 39.4rem;
         left: 83.5rem;
     }
 
     label.id-country{
         position: absolute;
-        top: 44.5rem;
+        top: 44.2rem;
         left: 83.5rem;
     }
 
     label.id-job {
         position: absolute;
-        top: 39.5rem;
-        left: 98rem;
+        top: 39.4rem;
+        left: 98.5rem;
     }
 
     label.id-city {
@@ -165,7 +165,7 @@ form {
         
 
         font-size: 18px;
-        top: 19.5rem;
+        top: 19rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -175,7 +175,7 @@ form {
     }
     input:focus + label.id-password {
         font-size: 18px;
-        top: 25.3rem;
+        top: 25rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -186,7 +186,7 @@ form {
 
     input:focus + label.id-name {
         font-size: 18px;
-        top: 31.2rem;
+        top: 31rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -197,8 +197,8 @@ form {
 
     input:focus + label.id-date {
         font-size: 18px;
-        top: 37rem;
-        left: 82.7rem;
+        top: 36.5rem;
+        left: 83.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -209,7 +209,7 @@ form {
 
     input:focus + label.id-country {
         font-size: 18px;
-        top: 41.9rem;
+        top: 41.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -220,7 +220,7 @@ form {
 
     input:focus + label.id-job {
         font-size: 18px;
-        top: 36.9rem;
+        top: 36.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -231,7 +231,7 @@ form {
 
     input:focus + label.id-city {
         font-size: 18px;
-        top: 41.8rem;
+        top: 41.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -244,7 +244,7 @@ form {
         
 
         font-size: 18px;
-        top: 19.5rem;
+        top: 19rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -254,7 +254,7 @@ form {
     }
     input:valid + label.id-password {
         font-size: 18px;
-        top: 25.3rem;
+        top: 25rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -265,7 +265,7 @@ form {
 
     input:valid + label.id-name {
         font-size: 18px;
-        top: 31.2rem;
+        top: 31rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -276,8 +276,8 @@ form {
 
     input:valid + label.id-date {
         font-size: 18px;
-        top: 37rem;
-        left: 82.7rem;
+        top: 36.5rem;
+        left: 83.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -288,7 +288,7 @@ form {
 
     input:valid + label.id-country {
         font-size: 18px;
-        top: 41.9rem;
+        top: 41.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -299,7 +299,7 @@ form {
 
     input:valid + label.id-job {
         font-size: 18px;
-        top: 36.9rem;
+        top: 36.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -310,7 +310,7 @@ form {
 
     input:valid + label.id-city {
         font-size: 18px;
-        top: 41.8rem;
+        top: 41.5rem;
         font-weight: bold;
         color: var(--orange);
         pointer-events:none;
@@ -323,7 +323,7 @@ form {
         width: 1.5rem;
         height: 1.5rem;
         position: absolute;
-        top: 48.8rem;
+        top: 48.3rem;
         left: 105.5rem;
     }
 `;

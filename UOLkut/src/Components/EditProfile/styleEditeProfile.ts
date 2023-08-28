@@ -95,7 +95,7 @@ form input[type=text],[type=password], [type=date] {
         position: absolute;
         height: 1.5rem;
         width: 1.5rem;
-        top: 16.5rem;
+        top: 15rem;
         left: 93rem;
     }
 

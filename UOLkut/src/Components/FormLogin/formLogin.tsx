@@ -8,11 +8,11 @@ import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from "react-router-dom"
 import { UserContextId } from "../../Context/userContext"
 
-const FormLogin = () => {
-    const navigate = useNavigate();
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const { setUserUid }  = useContext(UserContextId)!;
+    const FormLogin = () => {
+        const navigate = useNavigate();
+        const [email, setEmail] = useState("");
+        const [password, setPassword] = useState("");
+        const { setUserUid }  = useContext(UserContextId)!;
     
 
     const AuthLogin =  (event: React.SyntheticEvent) => {
