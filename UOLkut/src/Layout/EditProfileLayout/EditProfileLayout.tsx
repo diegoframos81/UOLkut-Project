@@ -2,7 +2,7 @@
 import EditProfile from "../../Components/EditProfile/editProfile"
 
 import Navbar from "../../Components/NavbarProfile/Navbar"
-import CardProfile from "../../Components/CardProfile/cardProfile"
+import { CardProfile } from "../../Components/CardProfile/cardProfile"
 import { ContainerEditLayout } from "./style"
 
 

@@ -1,12 +1,14 @@
     import styled from "styled-components";
 
     export const ContainerProfile = styled.header`
+
         box-shadow: 0px 0px 6px 0px, #aaccee;
         background: var(--white);
+        overflow-x: hidden;
         `;
 
     export const ContentProfile = styled.div`
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
 
         padding: 0 1rem 0.5;
@@ -137,7 +139,9 @@
         }
 
         @media screen and (max-width: 1279px) {
-            
+            header{
+                overflow-x: hidden;
+            }
             .navbar-content {
             
             flex-direction: row;
@@ -148,7 +152,7 @@
             .nav-group-right {
             display: flex;
             align-items: center;
-            width: 80%;
+            width: 800%;
             }
 
             .nav-group-left {

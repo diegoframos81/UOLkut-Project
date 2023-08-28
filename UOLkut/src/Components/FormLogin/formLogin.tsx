@@ -3,14 +3,17 @@ import { CheckPassword } from "../Inputs/sytleCheck";
 import { FormsLogin } from "./style";
 import { Button } from "../Inputs/styleButtons";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { Link } from "react-router-dom"
+import { UserContextId } from "../../Context/userContext"
 
 const FormLogin = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const { setUserUid }  = useContext(UserContextId)!;
+    
 
     const AuthLogin =  (event: React.SyntheticEvent) => {
         event.preventDefault();
@@ -22,7 +25,7 @@ const FormLogin = () => {
         const user = userCredential.user;
 
         console.log(user);
-        setUid(userCredential.user?.uid);
+        setUserUid (userCredential.user?.uid);
         navigate('/Profile');
 
         })

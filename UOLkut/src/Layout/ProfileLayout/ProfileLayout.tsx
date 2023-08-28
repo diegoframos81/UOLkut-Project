@@ -1,12 +1,12 @@
 
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../Components/NavbarProfile/Navbar';
-import Profile from '../../Components/CardProfile/cardProfile';
+import { CardProfile } from '../../Components/CardProfile/cardProfile';
 import EditProfileButton from '../../Components/Inputs/EditProfileButtom';
 import Friends from '../../Components/CardFriends/Friends';
 import Communities from '../../Components/Communities/cardCommunities';
 import { Routes, Route } from 'react-router-dom';
-import UserProfile from '../../Components/InfoProfile/headerCardProfile';
+import { ProfileInfo } from '../../Components/InfoProfile/headerCardProfile';
 import EditProfile from '../../Components/EditProfile/editProfile';
 import { ContainerLayout } from './styleLayoutProfile';
 
@@ -42,14 +42,14 @@ const ProfileLayout: React.FC = () => {
           <div className="body-content">
 
             <div className="profile-section left-section">
-              <Profile />
+              <CardProfile />
               <EditProfileButton />
             </div>
 
             {!isMobile && 
             <div className="profile-section center-section">
               <Routes>
-                <Route path="/" element={<UserProfile />} />
+                <Route path="/" element={<ProfileInfo />} />
                 <Route path="/EditProfile" element={<EditProfile />} />
               </Routes>
             </div>
@@ -59,7 +59,7 @@ const ProfileLayout: React.FC = () => {
               <Friends />
               {isMobile && 
                 <Routes>
-                  <Route path="/Profile" element={<UserProfile />} />
+                  <Route path="/Profile" element={<ProfileInfo />} />
                   <Route path="/EditProfile" element={<EditProfile />} />
                 </Routes>
               }

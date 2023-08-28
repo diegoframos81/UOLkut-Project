@@ -11,9 +11,8 @@ export const ContainerUserHeaderInfo = styled.div`
   
   /* height: 854px; */
   flex-shrink: 0;
-  background-color: #FDFEFF;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   text-align: left;
   color: #4B4B4B;
   
@@ -49,7 +48,8 @@ export const ContainerUserHeaderInfo = styled.div`
   background-color: transparent !important;
   
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 10px 10px;
+  padding-left: 0px;
   margin-top: 10px;
   word-wrap: break-word;
   font-size: var(--font-small);
@@ -61,12 +61,112 @@ export const ContainerUserHeaderInfo = styled.div`
 }
 
 .balloon-box img {
-  width: 100%
+  margin-top: -1.5rem;
+  width: 90%
 }
 
 .balloon-box p{
   position: absolute;
-  top: 15.8rem;
-  left: 51.5rem;
+  top: 15.3rem;
+  left: 54.5rem;
+}
+
+.user_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.user_details div {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.user_details div dt {
+  color: var(--text);
+}
+
+.user_details div dd {
+  color: var(--text);
+}
+
+.user_details span {
+  color: var(--orange);
+  cursor: pointer;
+  font-size: var(--font-small);
+}
+
+.multiple_options_field_details {
+  display: flex;
+  align-items: center;
+  
+}
+
+.firstchild{
+    margin-top: 16rem;
+}
+
+.firstchild dd {
+  margin-top: -0.5rem;
+}
+
+.multiple_options_field_details dd {
+  padding: 0.5rem 1rem;
+
+  color: var(--text);
+  font-size: var(--font-small);
+
+  border-radius: 30px;
+  border: 1px solid var(--orange);
+}
+@media (max-width:1200px) {
+  .balloon-box p{
+  position: absolute;
+  top: 15.3rem;
+  left: 43rem;
+}
+}
+@media (max-width: 800px) {
+
+  .balloon-box img {
+    width: 80%
+  }
+  .profileInfoContainer {
+    width: 100%;
+  }
+
+  .profileInfoContainer blockquote {
+    margin-top: 1.5rem;
+    position: relative;
+
+    height: 5rem;
+  }
+
+  .profileInfoContainer blockquote p {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .user_details {
+    font-size: .8rem;
+  }
+
+  .multiple_options_field_details dd,
+  .multiple_options_field_details span {
+    text-align: center;
+    font-size: .7rem;
+  }
+
+  .multiple_options_field_details dd {
+    font-size: .7rem;
+  }
+  .profileInfoContainer p{
+    bottom: 68%;
+  }
+  .isMobile {
+    display: none;
+  }
 }
 `

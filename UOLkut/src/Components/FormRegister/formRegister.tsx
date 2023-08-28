@@ -36,6 +36,7 @@ const FormRegister = () => {
                 
                 console.log(createUser);
                 const userValues = await addDoc(listUser,{
+                    
                     uid:createUser?.user.uid,
                     city,
                     country,

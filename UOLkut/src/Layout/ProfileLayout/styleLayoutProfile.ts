@@ -33,7 +33,7 @@ export const ContainerLayout = styled.div`
 
     .center-section {
         margin-left: 5%;
-        width: 51%;
+        margin-right: 5%;
     }
 
     .right-section {
@@ -79,4 +79,21 @@ export const ContainerLayout = styled.div`
     }
     }
 
+    @media (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .isDesktop {
+    display: none;
+  }
+
+  .isMobile {
+    display: block;
+    order: 1;
+  }
+
+  
+}
 `
